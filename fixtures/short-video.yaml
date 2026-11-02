@@ -1,0 +1,13 @@
+# 虚构示例：本地生活短视频周包。
+title_seed: "短视频周包剪辑"
+service: "本地生活短视频剪辑"
+city: "杭州"
+tiers:
+  - name: 周包3条
+    price: 300
+    includes: ["3条成片", "字幕"]
+  - name: 周包7条
+    price: 600
+    includes: ["7条成片", "封面字"]
+highlights: ["可出9:16", "按脚本剪"]
+contact_hint: "闲鱼发素材"

@@ -1,0 +1,14 @@
+# 虚构示例：常州机械 CAD 出图。价格和交付范围请改成你自己的。
+title_seed: "常州CAD出图"
+service: "机械零件 CAD 图纸"
+city: "常州"
+tiers:
+  - name: 基础
+    price: 50
+    includes: ["2D出图", "1次修改"]
+  - name: 加急
+    price: 120
+    includes: ["24h交付", "3次修改"]
+highlights: ["本地可面交确认", "支持DWG/PDF"]
+contact_hint: "闲鱼聊"
+banned_extra: []

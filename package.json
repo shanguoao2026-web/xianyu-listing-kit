@@ -1,0 +1,47 @@
+{
+  "name": "xianyu-listing-kit",
+  "version": "0.1.0",
+  "description": "Offline CLI for 闲鱼 (Xianyu) service listings: Chinese copy variants, SVG cover, price table, and banned-word lint.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "xianyu-listing-kit": "./dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "fixtures",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "xianyu",
+    "goofish",
+    "闲鱼",
+    "cli",
+    "listing"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node --input-type=module -e \"import { chmodSync } from 'node:fs'; chmodSync('dist/bin.js', 0o755)\"",
+    "test": "tsc -p tsconfig.json && tsc -p tsconfig.test.json && node scripts/run-tests.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}

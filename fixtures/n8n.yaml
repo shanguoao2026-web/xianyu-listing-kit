@@ -1,0 +1,13 @@
+# 虚构示例：n8n 工作流代搭。
+title_seed: "n8n自动化代搭"
+service: "n8n 工作流自动化搭建"
+city: "深圳"
+tiers:
+  - name: 单流程
+    price: 199
+    includes: ["1条工作流", "字段说明"]
+  - name: 周包
+    price: 699
+    includes: ["5条工作流", "7天内小改"]
+highlights: ["可远程交付", "可导出 JSON"]
+contact_hint: "闲鱼聊需求"
